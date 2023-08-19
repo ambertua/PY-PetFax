@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ pet.pet_name }} - Pet Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>{{ pet.pet_name }}</h1>
+    <img src="{{ pet.pet_photo }}" alt="{{ pet.pet_name }} Image">
+    <p>Fun Fact: {{ pet.pet_fact }}</p>
+</body>
+</html>
